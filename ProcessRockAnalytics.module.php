@@ -11,7 +11,7 @@ class ProcessRockAnalytics extends Process {
   public static function getModuleInfo() {
     return [
       'title' => 'RockAnalytics Dashboard',
-      'version' => '1.0.0',
+      'version' => '1.0.1',
       'summary' => 'Dasboard for RockAnalytics',
       'icon' => '',
       'requires' => ['RockAnalytics'],
@@ -38,7 +38,10 @@ class ProcessRockAnalytics extends Process {
   public function execute() {
     $this->headline(' ');
     $this->browserTitle('Analytics');
-    $url = $this->wire->modules->get('RockAnalytics')->shareUrl."&embed=true";
+    $share = $this->wire->modules->get('RockAnalytics')->shareUrl;
+    $href = $this->wire->pages->get(2)->url."module/edit?name=RockAnalytics";
+    if(!$share) return "Please set the share url in the <a href=$href>module's config</a>.";
+    $url = "$share&embed=true";
     $parts = explode("/", $url);
     $host = $parts[2];
     return '<iframe plausible-embed src="'.$url.'" scrolling="no" frameborder="0"
