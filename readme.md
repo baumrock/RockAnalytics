@@ -1,7 +1,5 @@
 ![img](RockAnalytics.svg)
 
-<br>
-
 ### Integrate plausible analytics into your ProcessWire backend
 
 <br>
