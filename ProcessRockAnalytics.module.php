@@ -13,7 +13,7 @@ class ProcessRockAnalytics extends Process {
       'title' => 'RockAnalytics Dashboard',
       'version' => '1.0.1',
       'summary' => 'Dasboard for RockAnalytics',
-      'icon' => '',
+      'icon' => 'line-chart',
       'requires' => ['RockAnalytics'],
       'installs' => [],
 
