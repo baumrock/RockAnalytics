@@ -2,6 +2,8 @@
 
 ### Integrate plausible analytics into your ProcessWire backend
 
+<img src=https://i.imgur.com/q7IIR5V.png>
+
 <br>
 
 Quickstart:
