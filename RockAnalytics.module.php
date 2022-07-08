@@ -9,11 +9,11 @@ class RockAnalytics extends WireData implements Module, ConfigurableModule {
   public static function getModuleInfo() {
     return [
       'title' => 'RockAnalytics',
-      'version' => '1.0.0',
+      'version' => '1.0.1',
       'summary' => 'Module to easily include plausible dashboard into the PW backend',
       'autoload' => false,
       'singular' => true,
-      'icon' => 'bar-chart',
+      'icon' => 'line-chart',
       'installs' => ['ProcessRockAnalytics'],
     ];
   }

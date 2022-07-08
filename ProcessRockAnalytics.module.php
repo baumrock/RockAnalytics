@@ -11,7 +11,7 @@ class ProcessRockAnalytics extends Process {
   public static function getModuleInfo() {
     return [
       'title' => 'RockAnalytics Dashboard',
-      'version' => '1.0.1',
+      'version' => '1.0.2',
       'summary' => 'Dasboard for RockAnalytics',
       'icon' => 'line-chart',
       'requires' => ['RockAnalytics'],
