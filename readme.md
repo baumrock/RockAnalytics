@@ -1,6 +1,6 @@
 <img src=https://github.com/baumrock/RockAnalytics/raw/main/RockAnalytics.svg height=100>
 
-### Integrate plausible analytics into your ProcessWire backend
+### Integrate plausible analytics or umami into your ProcessWire backend
 
 <img src=https://i.imgur.com/q7IIR5V.png>
 
