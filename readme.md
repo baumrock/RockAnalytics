@@ -41,7 +41,7 @@ When you add a website to your plausible dashboard it will show you a tracking c
 
 ```php
 if(!$user->isLoggedin()) {
-  $src = "https://plausible.verdino.com/js/plausible.js";
+  $src = "https://--yourplausibleinstance--.com/js/plausible.js";
   echo "<script defer data-domain='{$config->httpHost}' src='$src'></script>";
 }
 ```
