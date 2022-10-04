@@ -17,7 +17,7 @@ class RockAnalytics extends WireData implements Module, ConfigurableModule
   {
     return [
       'title' => 'RockAnalytics',
-      'version' => '1.0.2',
+      'version' => '1.0.3',
       'summary' => 'Module to easily include plausible dashboard into the PW backend',
       'autoload' => false,
       'singular' => true,
@@ -62,12 +62,14 @@ class RockAnalytics extends WireData implements Module, ConfigurableModule
 
   public function textOptIn(): string
   {
-    return $this->textOptIn ?: self::textOptIn;
+    $lang = $this->wire->user->language;
+    return $this->get("textOptIn__$lang|textOptIn") ?: self::textOptIn;
   }
 
   public function textOptOut(): string
   {
-    return $this->textOptOut ?: self::textOptOut;
+    $lang = $this->wire->user->language;
+    return $this->get("textOptOut__$lang|textOptOut") ?: self::textOptOut;
   }
 
   /**
