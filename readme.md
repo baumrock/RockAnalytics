@@ -39,9 +39,11 @@ Plausible is a "simple and privacy-friendly Google Analytics alternative". It is
 
 ### Tracking Snippet with Opt-Out Feature
 
-GDPR allows collecting anonymous usage data without consent, but you need to provide an opt-out link on your privacy page. RockAnalytics comes with `TextformatterRockAnalytics` that will automatically render the necessary JS code to enable and disable tracking by the user (saved in localstorage).
+GDPR allows collecting anonymous usage data without consent, but you need to provide an opt-out link on your privacy page. RockAnalytics comes with `TextformatterRockAnalytics` that will automatically render the necessary JS code to toggle tracking by the user (saved in localstorage).
 
-Simply add `[rockanalytics-opt-out]` to any textfield and apply the `TextformatterRockAnalytics` Textformatter. You can set the rendered text (in any language) in the module's settings.
+<img src=https://i.imgur.com/FYssLFA.gif>
+
+Simply add `[rockanalytics-toggle]` to any textfield and apply the `TextformatterRockAnalytics` Textformatter. You can set the rendered text (in any language) in the module's settings.
 
 If you render the plausible script via the dedicated render() method RockAnalytics will only load the tracking script if the user did not opt out from tracking:
 

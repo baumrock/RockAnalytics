@@ -13,7 +13,7 @@ class TextformatterRockAnalytics extends Textformatter
   {
     return [
       'title' => 'RockAnalytics',
-      'version' => '1.0.0',
+      'version' => '1.0.1',
       'summary' => 'Textformatter to render opt-out-link',
     ];
   }
@@ -21,7 +21,10 @@ class TextformatterRockAnalytics extends Textformatter
   public function format(&$str)
   {
     $str = str_replace(
-      "[rockanalytics-opt-out]",
+      [
+        "[rockanalytics-toggle]",
+        "[rockanalytics-opt-out]",
+      ],
       $this->wire->files->render(__DIR__ . "/TrackingToggle.php", [
         'rockanalytics' => $this->wire->modules->get('RockAnalytics'),
       ]),
