@@ -1,6 +1,6 @@
 <div class='RAToggle'>
   <div class='RAOptIn'>
-    <svg width="20" height="20" viewBox="0 0 24 24">
+    <svg width="20" height="20" viewBox="0 0 24 24" style="display: inline;">
       <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
         <circle cx="12" cy="12" r="9" />
         <path d="m10 10l4 4m0-4l-4 4" />
@@ -9,7 +9,7 @@
     <a href=#><?= $rockanalytics->textOptIn() ?></a>
   </div>
   <div class='RAOptOut'>
-    <svg width="20" height="20" viewBox="0 0 24 24">
+    <svg width="20" height="20" viewBox="0 0 24 24" style="display: inline;">
       <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
         <circle cx="12" cy="12" r="9" />
         <path d="m9 12l2 2l4-4" />
