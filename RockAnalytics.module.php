@@ -17,7 +17,7 @@ class RockAnalytics extends WireData implements Module, ConfigurableModule
   {
     return [
       'title' => 'RockAnalytics',
-      'version' => '1.0.3',
+      'version' => '1.0.4',
       'summary' => 'Module to easily include plausible dashboard into the PW backend',
       'autoload' => false,
       'singular' => true,
@@ -49,7 +49,6 @@ class RockAnalytics extends WireData implements Module, ConfigurableModule
       >
       (function() {
         let enabled = !!parseInt(localStorage.getItem('RockAnalyticsTracking'));
-        console.log(enabled);
         let el = document.getElementById('RockAnalytics');
         let script = document.createElement('script');
         script.setAttribute('defer', 'defer');
