@@ -82,6 +82,7 @@ class RockAnalytics extends WireData implements Module, ConfigurableModule
       'name' => 'shareUrl',
       'label' => 'Share-URL',
       'value' => $this->shareUrl,
+      'notes' => 'You can add &theme=light to your plausible share url!',
     ]);
     $inputfields->add([
       'type' => 'textarea',
